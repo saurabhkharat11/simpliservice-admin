@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:white;
+  color:black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-element {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  color:white;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin-top: 54px;
+  padding: 0;
+  width: 200px;
+  background-color: cyan;
+  position: fixed;
+  height: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 500;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  text-decoration: underline;
+}
+
+.sidebar a:hover:not(.active) {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+
